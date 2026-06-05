@@ -1,0 +1,69 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(119, 172, 174);
+    box-sizing: border-box;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+.navnar-wapper{
+    display: flex;
+    background-color: rgb(42, 63, 224);
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    width: 100%;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    /* padding: 5px; */
+    border-radius: 100px;
+    margin-left: 10px;
+}
+.logo-para{
+    position:absolute;
+    font-size: 25px;
+    margin-left: 50px;
+    align-items: start;
+   
+}
+
+.navbar-link{
+    gap: 50px;
+    margin-right: 70px;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+}
+.navbar-link a{
+    text-decoration: none;
+    color: rgb(247, 249, 251);
+    font-weight: bold;
+    position: relative;
+}
+.navbar-link a::after{
+    background-color: rgb(1, 10, 10);
+    content: " ";
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.navbar-link a:hover::after{
+    width: 100%;
+}
+.navbar-link a:hover{
+    color: black;
+}
+.btn{
+    margin-right: 50px;
+    background-color: rgb(92, 153, 32);
+}
