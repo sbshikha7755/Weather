@@ -4,20 +4,23 @@ body{
     box-sizing: border-box;
 }
 .navbar{
-    background-color: rgb(119, 172, 174);
+    background-color: rgb(3, 46, 48);
     box-sizing: border-box;
     position: sticky;
     z-index: 1000;
     top: 0;
     width: 100%;
+    
 }
 .navnar-wapper{
     display: flex;
-    background-color: rgb(42, 63, 224);
+    background-image: linear-gradient(to top,blue,white);
     align-items: center;
     justify-content: space-between;
     padding: 2px;
     width: 100%;
+    
+   
 }
 .logo{
     width: 30px;
@@ -43,7 +46,7 @@ body{
 }
 .navbar-link a{
     text-decoration: none;
-    color: rgb(247, 249, 251);
+    color: rgb(12, 12, 12);
     font-weight: bold;
     position: relative;
 }
@@ -63,7 +66,145 @@ body{
 .navbar-link a:hover{
     color: black;
 }
-.btn{
-    margin-right: 50px;
-    background-color: rgb(92, 153, 32);
+/* home......................................... */
+.home-section{
+      background-image: linear-gradient(to top,skyblue,white,blue,orange);
+      width: 100%;
+      height: auto;
+}
+input{
+    position:absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+}
+.search{
+    width: 20px;
+    margin-top: 26px;
+    position: relative;
+    margin-left: 180px;
+}
+.new{
+    font-size: 40px;
+    font-weight: 900;
+}
+.sun{
+    display: flex;
+    font-size: 60px;
+    margin-top: -70px;
+}
+.sun div{
+    /* font-size: 60px; */
+    margin-left: 10px;
+}
+.sun img{
+    width: 8rem;
+    height: 8rem;
+    margin-top: 40px;
+}
+/* card1 */
+.card1{
+    margin-top: -60px;
+    margin-left: 10px;
+}
+.weather{
+    display: flex;
+}
+.weather hr{
+    width: 1px;
+    height: 100px;
+    border: none;
+    background: #9a9999;
+    margin: 0 20px;
+}
+.weather img{
+    width: 20px; 
+}
+/* card2 */
+.card2{
+    width: 520px;
+    height: 130px;
+    border:none;
+    margin-left: 10px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right,blue,white,orange);
+    /* display: flex; */
+}
+.card22{
+    display: flex;
+    margin-top:-30px;
+}
+.card22 hr{
+    width: 1px;
+    height: 100px;
+    border: none;
+    background: #828282;
+}
+.card22 img{
+    width: 20px;
+}
+/* card3 */
+.card3{
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    border: none;
+    background-image: linear-gradient(to right,blue,white);
+}
+table img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+.logo{
+    width: 19px;
+    height: 19px;
+    /* padding: 5px; */
+    border-radius: 100px;
+    margin-left: 5px;
+}
+.logo-para{
+    font-size: 18px;
+    margin-left: 20px; 
+}
+
+.navbar-link{
+    gap: 10px;
+    margin-right: 30px;
+    display: flex;
+    font-size: 15px;
+}
+
 }
