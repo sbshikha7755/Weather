@@ -71,7 +71,7 @@ body{
     background-color: #7090ea;
       /* background-image: linear-gradient(to top,skyblue,white,blue,rgb(231, 177, 77)); */
       width: 100%;
-      height: auto;
+      height: 600px;
       scroll-margin-top: 80px;
       /* padding:20px; */
      
@@ -79,6 +79,7 @@ body{
 .main-box{
     display: flex;
     /* justify-content: right; */
+    /* flex-direction: column; */
 }
 /* .box2{
     margin-left: 200px;
@@ -181,7 +182,7 @@ input{
     padding: 20px;
     border-radius: 15px;
     background: linear-gradient(to right,#1d4ed8,#ffffff);
-    margin-top: 80px;
+    margin-top: 115px;
     margin-left: 170px;
     transition: all 0.4s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
@@ -227,19 +228,19 @@ tr hr{
 }
 
  .main-card{
-    width: 1100px;
+    width: 1185px;
     height: 220px;
     border: 2px solid rgb(31, 31, 31);
     box-shadow: 5px 5px 5px 5px black;
     border-radius: 20px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 10px;
  }
  .card-box{
     margin-top: 10px;
     margin-left: 5px;
     display: flex;
-    gap: 16px;
+    gap: 38px;
  }
  .cont{
     width: 200px;
@@ -266,10 +267,19 @@ tr hr{
  }
  /* new card */
  .main-card2{
-    width: 650px;
-    height: 300px;
+    width: 850px;
+    height: 400px;
     border: 1px solid;
+    border-radius: 20px 100px 20px 100px;
     background-image: linear-gradient(to right,blue,white);
+    margin-top: 20px;
+    margin-left: 10px;
+ }
+ .card-box2 h3{
+    margin-left: 10px;
+ }
+ .card-box2 th{
+    gap: 40px;
  }
 
 
@@ -322,5 +332,77 @@ tr hr{
     display: flex;
     font-size: 15px;
 }
+
+/* 1st page......... */
+
+.home-section{
+      height: auto;   
+}
+.main-box{
+     flex-direction: column;
+}
+/* card1 */
+.weather{
+    display: flex;
+}
+.weather img{
+    width: 12px; 
+}
+/* card2 */
+.card2{
+    width: 338px;
+}
+.card2 h3{
+    margin-left: 90px;
+}
+/* card3 */
+
+.box2{
+    position:relative;
+    width: 300px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* forecast............... */
+
+
+ .main-card{
+    width: 320px;
+    height: auto;
+    border: 2px solid rgb(31, 31, 31);
+    margin-top: 20px;
+    margin-left: 10px;
+ }
+ .card-box{
+    margin-top: 10px;
+    margin-left: 30px;
+    flex-direction:column ;
+    gap: 20px;
+ }
+ .cont{
+    width: 250px;
+    height: 200px;
+ }
+ 
+ /* new card */
+ .main-card2{
+    width: 850px;
+    height: 400px;
+    border: 1px solid;
+    border-radius: 20px 100px 20px 100px;
+    background-image: linear-gradient(to right,blue,white);
+    margin-top: 20px;
+    margin-left: 10px;
+ }
+ .card-box2 h3{
+    margin-left: 10px;
+ }
+ .card-box2 th{
+    gap: 40px;
+ }
+
+
 
 }
